@@ -1,40 +1,25 @@
 {
-  "name": "react-typescript-cheatsheet",
-  "version": "1.0.0",
-  "description": "this package.json is just for maintenance work",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/typescript-cheatsheets/react.git"
-  },
-  "keywords": [
-    "react",
-    "typescript",
-    "guides"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/typescript-cheatsheets/react/issues"
-  },
-  "homepage": "https://github.com/typescript-cheatsheets/react#readme",
+  "private": true,
   "scripts": {
-    "format-readme": "prettier --write \"README.md\"",
-    "gen-readme": "node genReadme.js",
-    "format": "prettier --write \"**/*.md\"",
-    "format:check": "prettier --check \"**/*.md\"",
-    "postinstall": "cd website && yarn",
-    "prepare": "husky install",
-    "start": "yarn --cwd website start",
-    "build": "yarn --cwd website build"
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
   },
   "dependencies": {
-    "front-matter": "^4.0.2",
-    "markdown-toc": "^1.2.0",
-    "yargs": "^17.5.1"
+    "date-fns": "^2.29.3",
+    "gray-matter": "^4.0.3",
+    "next": "^13.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1"
   },
   "devDependencies": {
-    "husky": "^7.0.0",
-    "prettier": "^2.6.2",
-    "pretty-quick": "^3.1.3"
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
